@@ -31,9 +31,9 @@ func animate():
 	
 	# Убираю партиклы во время прыжка
 	if is_on_floor() != false:
-		$Particles2D.visible = true
+		$Body/Particles2D.visible = true
 	else:
-		$Particles2D.visible = false
+		$Body/Particles2D.visible = false
 		anim = "fall"
 	
 	# Анимация бега
@@ -42,9 +42,9 @@ func animate():
 		if vel.x > 0:
 			anim = "runR"
 		else:
-			$Sprite.flip_h = false
-	if $Anim.current_animation != anim:
-		$Anim.play(anim)
+			$Body/Sprite.flip_h = false
+	if $Body/Anim.current_animation != anim:
+		$Body/Anim.play(anim)
 
 # Смерть	
 func dead():
@@ -52,7 +52,7 @@ func dead():
 	#$Shape.disabled = true
 	vel = Vector2(0, 0)
 	$Camera2D.clear_current()
-	$Timer.start(1)
+	$Body/Timer.start(1)
 
 # Перезагрузка сценны по истечению таймера
 func _on_Timer_timeout():

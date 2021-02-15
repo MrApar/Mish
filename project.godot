@@ -16,12 +16,15 @@ _global_script_class_icons={
 [application]
 
 config/name="Mish"
-run/main_scene="res://Window/Menu.tscn"
+run/main_scene="res://window/Menu.tscn"
 boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 1 )
-config/icon="res://icon.png"
+config/icon="res://cool/icon/icon.png"
+config/windows_native_icon="res://cool/icon/icon.ico"
 
 [display]
 
+window/size/width=1280
+window/size/height=720
 window/size/test_width=1280
 window/size/test_height=720
 window/per_pixel_transparency/allowed=true
@@ -75,4 +78,3 @@ LMB={
 [rendering]
 
 quality/2d/use_pixel_snap=true
-environment/default_environment="res://default_env.tres"
