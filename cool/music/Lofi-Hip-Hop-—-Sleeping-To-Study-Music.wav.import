@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Lofi-Hip-Hop-—-Sleeping-To-Study-Music.wav-597595840cea1d4f1536f53e656c6d97.sample"
+
+[deps]
+
+source_file="res://cool/music/Lofi-Hip-Hop-—-Sleeping-To-Study-Music.wav"
+dest_files=[ "res://.import/Lofi-Hip-Hop-—-Sleeping-To-Study-Music.wav-597595840cea1d4f1536f53e656c6d97.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
